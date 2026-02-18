@@ -15,7 +15,8 @@ const Dashboard = () => {
   const [shortLink, setShortLink] = useState("");
   const [urls, setUrls] = useState([]);
 
-  const baseUrl = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000";
+  const baseUrl =
+    import.meta.env.VITE_SHORT_URL_BASE || "http://localhost:5000";
 
   // Calculate total clicks
   const totalClicks = urls.reduce(

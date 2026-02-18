@@ -96,6 +96,7 @@ Click **"Advanced"** → **"Add Environment Variable"** and add:
 | `PORT`         | `5000`                                                           |
 | `MONGO_URI`    | Your MongoDB connection string from Step 1.4                     |
 | `JWT_SECRET`   | Generate a random string (e.g., use: `openssl rand -base64 32`)  |
+| `BASE_URL`     | Your backend URL (e.g., `https://pingalo.onrender.com`)          |
 | `FRONTEND_URL` | `https://pingalo.onrender.com` (update after deploying frontend) |
 
 **To generate JWT_SECRET** (run in terminal):
@@ -136,9 +137,10 @@ Fill in the following settings:
 
 Click **"Advanced"** → **"Add Environment Variable"** and add:
 
-| Key                | Value                                                                         |
-| ------------------ | ----------------------------------------------------------------------------- |
-| `VITE_BACKEND_URL` | Your backend URL from Step 2.4 (e.g., `https://pingalo-backend.onrender.com`) |
+| Key                   | Value                                                                  |
+| --------------------- | ---------------------------------------------------------------------- |
+| `VITE_BACKEND_URL`    | Your backend URL + `/api` (e.g., `https://pingalo.onrender.com/api`)   |
+| `VITE_SHORT_URL_BASE` | Your backend URL WITHOUT `/api` (e.g., `https://pingalo.onrender.com`) |
 
 ### 3.4 Deploy
 
